@@ -1,0 +1,23 @@
+<%= stylesheet_link_tag "products.css" %>
+
+<h1>Pieejamie produkti</h1>
+
+
+<% @products.each do |product| %>
+<div id="item">
+<div id="photo">
+<img src="/assets/<%= product.photo %>" width="100" height="100" />
+</div>
+<div id="name">Produkts: 
+<%= product.name %>
+</div>
+<div id="price">Cena: 
+<%= product.price %>Ls
+</div>
+<div id="description">Kategorija:
+<%= product.category_id %>
+
+<p>Apraksts:<%= product.description %></p>
+</div>
+</div>
+<% end %>

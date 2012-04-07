@@ -1,0 +1,27 @@
+@font-face { font-family: Roboto; src: url('../Roboto-Regular.ttf'); }
+#wrapper{
+
+position: relative;
+top:100px;
+left:100px;
+}
+
+#center_column{
+background-color: #dfe9f2;
+float:left;
+width:70%;
+margin:0px 10px 20px 10px;
+padding:5px 5px 10px 5px;
+border-radius: 10px;
+overflow: scrollbar-base-color:       #CCCCCC;
+scrollbar-arrow-color:      #000000;
+scrollbar-track-color:      #999999;
+scrollbar-3dlight-color:    #EEEEEE;
+scrollbar-highlight-color:  #FFFFFF;
+scrollbar-face-color:       #CCCCCC;
+scrollbar-shadow-color:     #999999;
+scrollbar-darkshadow-color: #666666;;
+min-height: 500px;
+
+
+}

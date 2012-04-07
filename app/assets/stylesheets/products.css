@@ -1,0 +1,23 @@
+@font-face { font-family: Roboto; src: url('../Roboto-Regular.ttf'); }
+
+#item{
+	outline-style:dashed;
+	outline-color:#b2b4c0;
+	margin-bottom:20px;
+padding-bottom:10px;
+	min-height:110px;
+}
+
+#photo{
+	padding: 10px;
+height:100px;
+width:100px;
+float:left
+}
+
+#name, #price, #description{
+
+float:left;
+padding-left:20px;
+width:550px;
+}

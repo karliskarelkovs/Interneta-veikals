@@ -1,0 +1,30 @@
+<%= stylesheet_link_tag "login.css" %>
+<%= form_tag sessions_path do %>
+<div id="wrapper">
+  <table>
+    <tr>
+      <td><%= label_tag :'E-pasts' %></td>
+      <td><%= text_field_tag :email, params[:email] %></td>
+    </tr>
+    <tr>
+      <td><%= label_tag :Parole %></td>
+      <td><%= password_field_tag :password %></td>
+    </tr>
+    <tr>
+      <td>
+<%= check_box_tag :remember_me, 1, params[:remember_me] %>
+    <%= label_tag :'Atcerēties mani' %>
+      </td>
+    </tr>
+    <tr>
+      <td><%= submit_tag "Ienākt" %></td>
+    </tr>
+    <tr>
+      <td>
+  <%= link_to "Neesi vēl reģistrējies?", signup_path %>
+<% end %>
+      </td>
+    </tr>
+  </table>
+
+</div>

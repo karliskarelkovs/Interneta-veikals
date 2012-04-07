@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interneta veikals</title>
+  <%= stylesheet_link_tag "stils" %>
+
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+<div id="page">
+<div id="header">
+</div>
+<div id="navbar">
+<span class="inbar">
+<ul>
+  <li class="navhome"><%= link_to content_tag(:span, "Sākums"), {:controller => 'store', :action=>'index' }%></li>
+  <li><%= link_to content_tag(:span, "Veikals"), {:controller => 'products', :action=>'index' }%></li>
+  <li><%= link_to content_tag(:span, "Par mums"), {:controller => 'store', :action=>'about_us' }%></li>
+  <li><%= link_to content_tag(:span, "Kontakti"), {:controller => 'store', :action=>'contacts' }%></li>
+  <li><% if current_user %>
+<%= current_user.email %>
+  <li><%= link_to content_tag(:span, "Iziet"), logout_path %></li>
+<% else %>
+  <%= link_to content_tag(:span, "Ienākt"), login_path %>.
+<% end %></li>
+</ul>
+</span>
+</div>
+  <div id="left_column">
+  <h1>Preču saraksts</h1>
+<table>
+<% @categories.each{|category| %>
+<tr><td><%= category.name%></td></tr>
+<% } %>
+</table>
+</div>
+
+<div id="center_column">
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+<%= yield %>
+</div>
+</div>
+</body>
+</html>

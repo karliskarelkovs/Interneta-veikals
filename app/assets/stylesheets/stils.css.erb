@@ -1,0 +1,135 @@
+/*kolonnu izkartojums*/
+@font-face { font-family: Roboto; src: url('../Roboto-Regular.ttf'); }
+#page{
+background-color:#e9ecfb;
+width: 996px;
+height: 800px;
+text-align:left;
+margin: 0px auto;
+margin-top:30px;
+border: 3px solid #b2b4c0;
+border-radius: 5px;
+font-family: Molengo;
+border-style:groove;
+
+}
+
+#header{
+float: left;
+height: 170px;
+width: 980px;
+background-image: url(<%= asset_path 'header.JPG' %>);
+text-align:right;
+margin: 10px 5px 50px 5px;
+border: #abab8a solid 2px;
+border-radius: 5px;
+border-style:groove;
+}
+
+#left_column{
+background-color: #dfe9f2;
+float:left;
+width:20%;
+margin:0px 10px 20px 10px;
+padding:5px 5px 10px 5px;
+border-radius: 5px;
+overflow: hidden;
+min-height: 500px
+
+}
+
+#center_column{
+
+background-color: #dfe9f2;
+float:left;
+width:70%;
+margin:0px 10px 20px 10px;
+padding:5px 5px 10px 5px;
+border-radius: 5px;
+min-height: 500px;
+
+}
+h1{
+font-size:20Px;
+text-align: center;
+text-shadow: 2px 1px 3px #c97f76;
+}
+
+#navbar{
+        position: absolute;
+        top:220px;
+        right:400px;
+	width:auto;
+	height:36px;
+	background:url(<%= asset_path 'navbar/navbar-bg.png' %>) left top repeat-x;
+        font-size:12px;
+        border-radius:5px;
+        border-style:groove;
+}
+#navbar .inbar{
+	display:block;
+	height:36px;
+	background:url(<%= asset_path 'navbar/right-round.png' %>) right top no-repeat;
+}
+#navbar ul, #navbar ul li{
+	border:0px;
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	height:36px;
+	line-height:36px;
+        
+}
+#navbar ul{
+	background:url(<%= asset_path 'navbar/left-round.png' %>) left top no-repeat;
+}
+#navbar ul li{
+	float:left;
+	display:block;
+	line-height:36px;
+        
+}
+#navbar ul li a{
+	color:#403e32;
+	text-decoration:none;
+	font-weight:bold;
+	display:block;
+        
+}
+#navbar ul li a span{
+	padding: 0 20px 0 0;
+	height:36px;
+	line-height:36px;
+	display:block;
+	margin-left:20px;
+        
+}
+#navbar .navhome a, #navbar .navhome a:hover{
+	background:url(<%= asset_path 'navbar/a-bg.png' %>) left top no-repeat;
+	height:36px;
+	line-height:36px;
+}
+#navbar .navhome a span, #navbar .navhome a:hover span{
+	color:#FFFFFF;
+	background:url(<%= asset_path 'navbar/span-bg.png' %>) right top no-repeat;
+	height:36px;
+	line-height:36px;
+}
+#navbar ul li a:hover{
+	background:url(<%= asset_path 'navbar/ahover-bg.png' %>) left bottom no-repeat;
+	height:36px;
+	line-height:36px;
+}
+#navbar ul li a:hover span{
+	background:url(<%= asset_path 'navbar/spanhover-bg.png' %>) right bottom no-repeat;
+	height:36px;
+	line-height:36px;
+}
+
+alert{
+    background-color: red;
+}
+
+notice{
+    background-color: green;
+}
